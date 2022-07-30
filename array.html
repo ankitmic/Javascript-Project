@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<script>
+
+var arr = [];
+for(var i=0; i<5000; i++){
+    var x = Math.floor(Math.random() * (906-798 +1))+798;
+    arr[i]=x;
+}
+
+console.log(" "+arr);
+
+let count = 0;
+for(var j=0; j<arr.length;j++) {
+    if(arr[j]%2 == 0) {
+        count++
+    }
+}
+
+console.log(count);
+var evenPerc = (count * 100)/5000;
+console.log("even per", evenPerc);
+console.log("odd per", 100-evenPerc);
+
+let countvalue = 0
+for(var i=0; i<5000; i++){
+    if(arr[i]> 799 && arr[i]< 852) {
+        countvalue++
+    }
+}
+var countvaluea = (countvalue * 100)/5000;
+
+console.log(countvaluea);
+
+
+
+</script>
+
+</body>
+</html>

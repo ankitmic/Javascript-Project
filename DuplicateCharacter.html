@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<script>
+//  var string = prompt("Enter a string");
+//  var letter = prompt("Enter a letter");
+//  var counter = 0;
+
+//  for(var i=0; i<string.length; i++) {
+//     if(string[i] == letter) {
+//         counter++;
+//     }
+//  }
+//  console.log(`${string} => ${letter} => ${counter}`);
+
+var string = prompt("Enter a string");
+
+var character = string.split(' '); 
+var str = "";
+for(var i=0; i<character.length; i++){
+    for(var j=character[i].length; j>=0; j--){
+        str =str + character[i].charAt(j);
+    }
+    str= str + " "; 
+}
+    
+    console.log(str);
+
+ 
+
+</script>
+
+</body>
+</html>
